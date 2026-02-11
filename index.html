@@ -1,1 +1,272 @@
+<!-- index.html -->
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Nexum Imperium</title>
+  <meta name="description" content="Nexum Imperium — catálogo, serviços e links oficiais." />
+  <link rel="icon" href="./assets/logo.png" />
+  <link rel="stylesheet" href="./css/styles.css" />
+</head>
 
+<body>
+  <a class="skip" href="#conteudo">Pular para o conteúdo</a>
+
+  <header class="topbar">
+    <div class="wrap topbar__row">
+      <a class="brand" href="#inicio" aria-label="Ir para o topo">
+        <img class="brand__mark" src="./assets/logo.png" alt="Logo Nexum Imperium" />
+        <span class="brand__name"><span class="gold">Nexum Imperium</span></span>
+      </a>
+
+      <nav class="nav" aria-label="Menu principal">
+        <a class="nav__link" href="#catalogo">Catálogo</a>
+        <a class="nav__link" href="#servicos">Serviços</a>
+        <a class="nav__link" href="#duvidas">Dúvidas</a>
+        <a class="nav__link" href="#contato">Contato</a>
+      </nav>
+
+      <div class="topbar__actions">
+        <a class="btn btn--gold" href="#atalhos">Acesso rápido</a>
+        <button class="icon" id="menuBtn" type="button" aria-label="Abrir menu" aria-expanded="false">☰</button>
+      </div>
+    </div>
+
+    <div class="mobile" id="mobileMenu" aria-hidden="true">
+      <div class="wrap mobile__inner">
+        <a class="mobile__link" href="#catalogo">Catálogo</a>
+        <a class="mobile__link" href="#servicos">Serviços</a>
+        <a class="mobile__link" href="#duvidas">Dúvidas</a>
+        <a class="mobile__link" href="#contato">Contato</a>
+        <a class="btn btn--gold" href="#atalhos">Acesso rápido</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <section class="hero" id="inicio">
+      <div class="wrap hero__grid">
+        <div class="hero__left">
+          <div class="meta">
+            <span class="chip">
+              <span class="dot" id="statusDot"></span>
+              <span class="muted">Status:</span>
+              <strong id="statusText">Online</strong>
+            </span>
+            <span class="chip chip--soft">Links oficiais • Anti-golpe</span>
+          </div>
+
+          <h1 class="hero__title">
+            <span class="gold">Nexum Imperium</span> — presença, método e entrega.
+          </h1>
+
+          <p class="hero__lead">
+            Hub direto ao ponto: catálogo por jogo, serviços sob medida e rotas oficiais.
+          </p>
+
+          <div class="hero__cta">
+            <a class="btn btn--gold" href="#atalhos">Abrir atalhos</a>
+            <a class="btn btn--ghost" href="#catalogo">Ver catálogo</a>
+          </div>
+
+          <div class="grid3">
+            <div class="card card--flat">
+              <div class="card__kicker">Organização</div>
+              <div class="card__title">Estrutura por título</div>
+              <div class="card__desc muted">Lista objetiva, sem ruído.</div>
+            </div>
+
+            <div class="card card--flat">
+              <div class="card__kicker">Execução</div>
+              <div class="card__title">Processo transparente</div>
+              <div class="card__desc muted">Pedido → plano → entrega.</div>
+            </div>
+
+            <div class="card card--flat">
+              <div class="card__kicker">Segurança</div>
+              <div class="card__title">Direcionamento oficial</div>
+              <div class="card__desc muted">Evite golpes: use apenas este site.</div>
+            </div>
+          </div>
+        </div>
+
+        <aside class="hero__right">
+          <div class="panel panel--emblem" aria-label="Emblema">
+            <img class="emblem" src="./assets/emblem.png" alt="Emblema Nexum Imperium" />
+          </div>
+
+          <div class="panel">
+            <div class="panel__label">Mensagem</div>
+            <p class="panel__quote gold" id="mote">Disciplina cria resultado.</p>
+            <p class="panel__note muted">Use somente referências oficiais.</p>
+          </div>
+
+          <div class="panel" id="atalhos">
+            <div class="panel__label">Acesso rápido</div>
+
+            <a class="action" id="linkLoja" href="#" target="_blank" rel="noopener">
+              <span class="action__title">Loja Nexum</span>
+              <span class="action__sub">catálogo externo</span>
+            </a>
+
+            <a class="action" id="linkGG" href="#" target="_blank" rel="noopener">
+              <span class="action__title">GGMAX</span>
+              <span class="action__sub">perfil verificado</span>
+            </a>
+
+            <a class="action" id="linkDiscord" href="#" target="_blank" rel="noopener">
+              <span class="action__title">Discord</span>
+              <span class="action__sub">suporte e pedidos</span>
+            </a>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section" id="catalogo">
+      <div class="wrap">
+        <div class="section__head">
+          <h2 class="section__title">Catálogo</h2>
+          <p class="section__sub muted">Seleção por universo e utilidade.</p>
+        </div>
+
+        <div class="grid4">
+          <article class="card">
+            <div class="badge">HoYoverse</div>
+            <h3 class="card__title">Pacotes por título</h3>
+            <ul class="list">
+              <li>uni-genshin-impact</li>
+              <li>uni-arknights-endfield</li>
+              <li>uni-honkai-star-rail</li>
+              <li>uni-zenless-zone-zero</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <div class="badge">Outros</div>
+            <h3 class="card__title">Extras</h3>
+            <ul class="list">
+              <li>uni-wuthering-waves</li>
+              <li>uni-dragon-nest</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <div class="badge">Roblox</div>
+            <h3 class="card__title">Coleções Roblox</h3>
+            <ul class="list">
+              <li>Blox Fruits (atual)</li>
+              <li>Novos jogos (em breve)</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <div class="badge">Conta</div>
+            <h3 class="card__title">Venda organizada</h3>
+            <p class="muted">Anúncios e opções em canal oficial.</p>
+            <div class="row">
+              <a class="btn btn--gold btn--sm" href="#atalhos">Ir para atalhos</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="servicos">
+      <div class="wrap">
+        <div class="section__head">
+          <h2 class="section__title">Serviços</h2>
+          <p class="section__sub muted">Entrega limpa. Comunicação clara.</p>
+        </div>
+
+        <div class="grid2">
+          <article class="card">
+            <div class="badge">Genshin</div>
+            <h3 class="card__title">Exploração</h3>
+            <p class="muted">Regiões, baús, coletáveis, progresso.</p>
+          </article>
+
+          <article class="card">
+            <div class="badge">Genshin</div>
+            <h3 class="card__title">Abismo / conteúdo</h3>
+            <p class="muted">Planejamento e execução conforme conta.</p>
+          </article>
+
+          <article class="card">
+            <div class="badge">Genshin</div>
+            <h3 class="card__title">Eventos</h3>
+            <p class="muted">Rotina, tarefas e recompensas.</p>
+          </article>
+
+          <article class="card">
+            <div class="badge">Pedido</div>
+            <h3 class="card__title">Personalizado</h3>
+            <p class="muted">Você descreve. Nós respondemos com um plano.</p>
+            <div class="row">
+              <a class="btn btn--gold btn--sm" id="btnEmail" href="#">Solicitar por e-mail</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="duvidas">
+      <div class="wrap">
+        <div class="section__head">
+          <h2 class="section__title">Dúvidas</h2>
+          <p class="section__sub muted">Respostas objetivas.</p>
+        </div>
+
+        <div class="faq">
+          <details>
+            <summary>Onde comprar?</summary>
+            <p class="muted">Use “Acesso rápido” para abrir canais oficiais.</p>
+          </details>
+
+          <details>
+            <summary>Como funciona a entrega?</summary>
+            <p class="muted">Após compra, combinamos o fluxo no canal correto.</p>
+          </details>
+
+          <details>
+            <summary>Fora do catálogo?</summary>
+            <p class="muted">Sim: envie detalhes por e-mail para avaliação.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contato">
+      <div class="wrap">
+        <div class="section__head">
+          <h2 class="section__title">Contato</h2>
+          <p class="section__sub muted">Somente e-mail oficial.</p>
+        </div>
+
+        <div class="contact">
+          <a class="contact__card" id="emailLink" href="#">
+            <div class="contact__kicker">Email</div>
+            <div class="contact__value">nexumimperium@gmail.com</div>
+          </a>
+        </div>
+
+        <footer class="footer">
+          <div class="footer__left">
+            <img class="brand__mark brand__mark--sm" src="./assets/logo.png" alt="Logo Nexum Imperium" />
+            <div>
+              <div class="footer__title gold">Nexum Imperium</div>
+              <div class="footer__sub muted">Use apenas links oficiais.</div>
+            </div>
+          </div>
+          <div class="footer__right muted">
+            © <span id="year"></span> <span class="gold">Nexum Imperium</span>
+          </div>
+        </footer>
+      </div>
+    </section>
+  </main>
+
+  <script src="./js/main.js"></script>
+</body>
+</html>
